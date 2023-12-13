@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@200&family=Whisper&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Playpen Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #d7c8c8; /* Dark background color */
+      color: #fff; /* Light text color */
+    }
+
+    header {
+      background-color: #151414; /* Dark header background color */
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    header img {
+      border-radius: 50%; /* Make the profile photo circular */
+      max-width: 150px; /* Set the maximum width for the profile photo */
+    }
+
+    nav {
+      position: absolute;
+      top: 20px;
+      right: 20px; /* Adjusted the position to the right */
+      display: flex;
+      align-items: center;
+    }
+
+    nav input {
+      margin-right: 10px; /* Adjusted margin to the right */
+      padding: 5px;
+      border: none;
+      border-radius: 5px;
+      background-color: #333; /* Dark input background color */
+      color: #fff; /* Light text color */
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin-left: auto; /* Push the navigation options to the right */
+    }
+
+    nav li {
+      margin-right: 20px;
+    }
+
+    section {
+      padding: 40px;
+      text-align: center;
+    }
+
+    h1, h2 {
+      font-family: 'Whisper', sans-serif;
+      color: #c4c3d1;
+    }
+
+    .about, .projects, .contact {
+      background-color: #333; /* Dark background color for sections */
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    .project-item {
+      margin: 20px 0;
+      padding: 20px;
+      border: 1px solid #555; /* Dark border color */
+      border-radius: 8px;
+      background-color: #444; /* Darker background color for project items */
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .project-item:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #1e1e1e; /* Dark footer background color */
+      color: #fff;
+      text-align: center;
+      padding: 5px; /* Smaller padding */
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <!--<img src="profile-photo.jpg" alt="Profile Photo">  Add your profile photo file name and extension here -->
+    <h1>Manoj Jangid</h1>
+    <p>Web Developer</p>
+  </header>
+
+  <nav>
+    <!--<input type="text" placeholder="Search">-->
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I am currently studying Electronic Engineering at Sinhgad College of Engineering in Pune. I have a strong passion for web development and a quick learning ability. I strive to tackle challenges efficiently and make sure every experience contributes to continuous learning. I believe in the importance of fostering a mindset geared towards learning and adapting to new technologies.
+    </p>
+    <p>
+      Name: Manoj Jangid
+    </p>
+    <p>
+      Age: 21
+    </p>
+    <p>
+      Education: Electronic Engineering at Sinhgad College of Engineering, Pune
+    </p>
+    <p>
+      Blood Group: A+
+    </p>
+    <p>
+      Hobbies: Coding, Reading, Playing circket.
+    </p>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>My Projects</h2>
+    <div class="project-item">PBL Alcohole detection using microcontroller 8051.</div>
+    <div class="project-item">Using SQL rentel car management portal.</div>
+    <!-- Add more project items as needed -->
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email:jangidmanoj321@gmail.com</p>
+    <p>LinkedIn: linkedin.com/yourprofile</p>
+    <p>GitHub: github.com/yourusername</p>
+  </section>
+
+  <footer>
+    &copy; 2023 Manoj Janngid | <!--<a href="https://github.com/yourusername" style="color: #fff;">GitHub</a>-->
+  </footer>
+
+  <script>
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
